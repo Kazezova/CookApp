@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="1dp"
+    android:clickable="true"
+    android:focusable="true">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/mealThumb"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/cookbook_nav_header" />
+        <TextView
+            android:layout_marginTop="70dp"
+            android:text="Meal Name"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:id="@+id/mealName"
+            android:background="#80000000"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
